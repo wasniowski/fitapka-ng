@@ -1,0 +1,24 @@
+{
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "htmlWhitespaceSensitivity": "strict",
+    "insertPragma": false,
+    "printWidth": 140,
+    "proseWrap": "preserve",
+    "requirePragma": false,
+    "semi": true,
+    "endOfLine": "lf",
+    "singleQuote": true,
+    "tabWidth": 4,
+    "trailingComma": "none",
+    "useTabs": false,
+    "overrides": [
+        {
+            "files": ["*.html"],
+            "options": {
+                "useTabs": true,
+                "tabWidth": 2
+            }
+        }
+    ]
+}

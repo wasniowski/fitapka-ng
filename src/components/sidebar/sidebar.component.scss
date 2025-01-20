@@ -1,0 +1,79 @@
+@import '../../styles/variables';
+
+:host {
+    padding: 0 50px;
+    margin: 50px 0;
+    border-right: 1px solid $border;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+fa-user-info {
+    margin: 50px 0 100px 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex: 1;
+
+    li {
+        margin: 30px 0;
+        position: relative;
+        line-height: 20px;
+
+        &.active {
+            font-weight: 700;
+
+            a {
+                color: $black;
+
+                .icon {
+                    opacity: 0.9;
+                }
+            }
+        }
+
+        a {
+            color: $lighter;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                color: $main-green;
+                cursor: pointer;
+            }
+
+            .icon {
+                opacity: 0.3;
+                margin-right: 16px;
+            }
+        }
+    }
+}
+
+.settings {
+    font-weight: bold;
+    color: $black;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        color: $main-green;
+        cursor: pointer;
+    }
+
+    .icon {
+        margin-right: 16px;
+    }
+}
